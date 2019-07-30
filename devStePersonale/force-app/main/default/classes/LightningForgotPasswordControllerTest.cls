@@ -7,6 +7,7 @@ public with sharing class LightningForgotPasswordControllerTest {
   System.assertEquals(LightningForgotPasswordController.forgotPassword('fakeUser', 'http://a.com'), Label.Site.invalid_email);
   System.assertEquals(LightningForgotPasswordController.forgotPassword(null, 'http://a.com'), Label.Site.invalid_email);
   System.assertEquals(LightningForgotPasswordController.forgotPassword('a', '/home/home.jsp'), Label.Site.invalid_email);
+  
  }
 
  /* Verifies that null checkEmailRef url throws proper exception. */

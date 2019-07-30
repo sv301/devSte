@@ -12,7 +12,8 @@ global class LightningLoginFormController {
             return null;
         }
         catch (Exception ex) {
-            return ex.getMessage();            
+            return ex.getMessage();    
+                    
         }
     }
     
